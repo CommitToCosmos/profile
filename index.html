@@ -4,7 +4,38 @@
 <meta charset="UTF-8">
 <title>Rahul Musale - Academic Profile</title>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<link rel="stylesheet" href="style.css">
+<style>
+/* ===== General Reset ===== */
+* { margin: 0; padding: 0; box-sizing: border-box; }
+body { font-family: 'Segoe UI', Arial, sans-serif; background: #f5f5f7; color: #333; line-height: 1.6; }
+a { color: #0077cc; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* ===== Header ===== */
+header { background: linear-gradient(120deg, #0d1b2a, #1b263b); color: #fff; padding: 30px 20px; text-align: center; }
+header h1 { font-size: 2rem; margin-bottom: 5px; }
+header p { font-size: 1.1rem; opacity: 0.85; }
+
+/* ===== Navbar ===== */
+nav { margin-top: 15px; }
+nav a { margin: 0 10px; font-weight: bold; color: #f1f1f1; }
+nav a:hover { color: #ffd166; }
+
+/* ===== Sections ===== */
+section { max-width: 900px; margin: 30px auto; background: #fff; padding: 20px; border-radius: 10px; box-shadow: 0 2px 8px rgba(0,0,0,0.1); }
+section h2 { border-bottom: 2px solid #eee; padding-bottom: 5px; margin-bottom: 15px; color: #0d1b2a; }
+
+/* ===== Collapsible List ===== */
+.collapsible { background-color: #eee; cursor: pointer; padding: 10px; width: 100%; border: none; text-align: left; font-size: 16px; border-radius: 5px; margin-top: 5px; }
+.collapsible.active, .collapsible:hover { background-color: #ddd; }
+.content-hidden { padding: 10px; display: none; background: #fafafa; border-radius: 5px; margin-bottom: 10px; }
+
+/* ===== Social Feed ===== */
+#social iframe, #social blockquote { width: 100%; margin-bottom: 20px; }
+
+/* ===== Footer ===== */
+footer { text-align: center; padding: 20px; font-size: 0.9rem; color: #888; }
+</style>
 </head>
 <body>
 
@@ -13,13 +44,12 @@
   <p>Assistant Professor | Astronomy & Astrophysics | Researcher</p>
   <nav>
     <a href="#education">Education</a>
-    <a href="#experience">Academic Experience</a>
+    <a href="#experience">Experience</a>
     <a href="#certifications">Certifications</a>
     <a href="#publications">Publications</a>
     <a href="#research">Research</a>
     <a href="#skills">Skills</a>
-    <a href="#activities">Activities</a>
-    <a href="#workshops">Workshops</a>
+    <a href="#social">Social</a>
     <a href="#contact">Contact</a>
   </nav>
 </header>
@@ -35,70 +65,56 @@
 </section>
 
 <section id="experience">
-  <h2>Professional Academic Experience</h2>
-  <p><strong>Assistant Professor (Physics)</strong>, K.V.N. College of Arts, Commerce and Science, Nashik (July 2023 – April 2025)</p>
-  <p>Key Teaching Areas: Scientific Data Analysis with Python, FORTRAN & Numerical Methods, Computational Physics, Astrophysics</p>
+  <h2>Academic Experience</h2>
+  <p><strong>Assistant Professor (Physics)</strong>, K.V.N. College, Nashik (July 2023 – April 2025)</p>
+  <p>Teaching: Python Data Analysis, FORTRAN & Numerical Methods, Computational Physics, Astrophysics</p>
 </section>
 
 <section id="certifications">
-  <h2>Certifications & Qualifications</h2>
+  <h2>Certifications</h2>
   <ul>
-    <li>CSIR-NET (Physical Sciences, 2024) – JRF & LS (AIR 192)</li>
+    <li>CSIR-NET (JRF & LS) – Physical Sciences (2024, AIR 192)</li>
     <li>GATE (Physics, 2022)</li>
-    <li>CSIR-NET (Physical Sciences, 2020) – Lectureship</li>
     <li>MH-SET (Physics, 2021)</li>
-    <li>PhD Entrance Test (SPPU, 2021)</li>
-    <li>IIT-JAM (2019)</li>
   </ul>
 </section>
 
 <section id="publications">
   <h2>Publications</h2>
   <ul>
-    <li><em>Neutral hydrogen gas and the unification scheme in extragalactic compact radio sources</em>, in preparation (2025)</li>
-    <li><em>Computational Physics for B.Sc.</em>, University Textbook, YCMOU (2025)</li>
-    <li><em>Laboratory Manual in Computational Physics for B.Sc.</em>, University Textbook, YCMOU (2025)</li>
-    <li>Poster Presentation, ASI 2025, NIT Rourkela</li>
+    <li><em>Neutral hydrogen gas and the unification scheme in extragalactic compact radio sources</em> (In prep, 2025)</li>
+    <li><em>Computational Physics for B.Sc.</em> – University Textbook, YCMOU (2025)</li>
   </ul>
 </section>
 
 <section id="research">
-  <h2>Research Experience</h2>
+  <h2>Research</h2>
   <h3>Extragalactic Compact Radio Sources</h3>
-  <p>Investigating asymmetries in CSS & PS sources using symmetry parameters and HI column densities.</p>
-
+  <p>Investigating asymmetries in CSS & PS sources using symmetry parameters and HI data.</p>
   <h3>Pulsars</h3>
-  <p>Analyzed correlation between magnetic inclination angles and emission properties.</p>
-
-  <h3>Radio Image Analysis Using CASA</h3>
-  <p>Processed VLA & ALMA data for HI and sub-mm imaging.</p>
+  <p>Studied correlations between magnetic inclination angles and pulse profiles.</p>
 </section>
 
 <section id="skills">
-  <h2>Technical Skills</h2>
+  <h2>Skills</h2>
   <ul>
     <li><strong>Programming:</strong> Python, FORTRAN, SQL, C, Matlab</li>
-    <li><strong>Tools:</strong> CASA, ALADIN, SOI-DS9, TOPCAT, GNUPlot, LaTeX</li>
+    <li><strong>Tools:</strong> CASA, ALADIN, DS9, TOPCAT, GNUPlot, LaTeX</li>
     <li><strong>OS:</strong> Linux, Windows, macOS</li>
   </ul>
 </section>
 
-<section id="activities">
-  <h2>Other Activities & Experience</h2>
-  <p>Founding member of Syzygy Astronomy Outreach; developed experiments for IUCAA Schools.</p>
-</section>
+<section id="social">
+  <h2>Social Media Updates</h2>
 
-<section id="workshops">
-  <h2>Workshops & Participations</h2>
-  <button class="collapsible">Show/Hide List</button>
-  <div class="workshop-list" style="display:none;">
-    <ul>
-      <li>Winter School in Astronomical Calculations using Python (2025)</li>
-      <li>Summer School on Cosmology (ICTP, 2022)</li>
-      <li>18th Synthesis Imaging Workshop (NRAO, USA, 2022)</li>
-      <!-- Add the rest of the workshops here -->
-    </ul>
-  </div>
+  <h3>Instagram</h3>
+  <blockquote class="instagram-media" data-instgrm-permalink="https://www.instagram.com/p/POST_ID/" data-instgrm-version="14"></blockquote>
+
+  <h3>Twitter</h3>
+  <a class="twitter-timeline" href="https://twitter.com/rahulmusale1100">Tweets by rahulmusale1100</a>
+
+  <h3>LinkedIn</h3>
+  <iframe src="LINKEDIN_POST_EMBED_URL" height="500" frameborder="0" allowfullscreen=""></iframe>
 </section>
 
 <section id="contact">
@@ -112,12 +128,8 @@
   <p>© 2025 Rahul Musale — All Rights Reserved</p>
 </footer>
 
-<script>
-  document.querySelector(".collapsible").addEventListener("click", function() {
-    const list = document.querySelector(".workshop-list");
-    list.style.display = (list.style.display === "block") ? "none" : "block";
-  });
-</script>
+<script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+<script async src="//www.instagram.com/embed.js"></script>
 
 </body>
 </html>
